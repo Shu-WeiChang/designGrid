@@ -1,0 +1,458 @@
+/* IMPORTS AND VARIABLES */
+@font-face {
+  font-family: Norse;
+  font-weight: bold;
+  src: url("norse.bold.otf") format("opentype");
+}
+
+/* GENERAL */
+body > * {
+  font-family: "Open Sans", sans-serif;
+}
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2em 3em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  box-shadow: 0 0 .5em #aaa;
+  border-radius: 5px;
+}
+
+.logo {
+  align-items: center;
+  font-family: Norse, sans-serif;
+  font-weight: bold;
+  color: #ce973e;
+}
+
+.logo > a:last-child {
+  margin-left: .5em;
+  white-space: nowrap;
+  text-shadow: .02em .02em #ce973e;
+}
+
+.logo img {
+  height: 60px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.4em;
+  line-height: 1.8;
+  color: rgba(74,74,74,.7);
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+  white-space: nowrap;
+  background-color: #fff;
+}
+
+nav > * {
+  display: flex;
+  align-items: center;
+}
+
+nav .logo > a:last-child {
+  font-size: 25px;
+}
+
+#menu {
+  margin-left: 1em;
+}
+
+#menu > a:first-child {
+  color: #6abfc3;
+  font-size: 30px;
+}
+
+#menu ul {
+  display: none;
+  margin-bottom: 0;
+}
+
+#menu li {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgba(74,74,74,.7);
+}
+
+#menu li > * {
+  padding: .5em;
+}
+
+#menu li:nth-child(2) a {
+  position: relative;
+}
+
+#menu li:nth-child(2) a::after {
+  display: inline-block;
+  border-top: 4px solid rgba(74,74,74,.7);
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  margin-left: .4em;
+  vertical-align: .3em;
+  content: "";
+}
+
+#menu li > a:hover,
+#menu li > a:hover:after {
+  color: #000;
+  border-top-color: #000;
+}
+
+/* HEADER */
+header {
+  margin-top: 100px;
+  text-align: center;
+  background: linear-gradient(to bottom, #fff, #eee);
+}
+
+header h1 {
+  margin-bottom: 30px;
+  padding: 0 20px;
+  font-size: 2.8em;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #ce973e;
+}
+
+header p {
+  margin-bottom: 60px;
+}
+
+header .btn {
+  margin-bottom: 50px;
+  background-color: #6abfc3;
+  border-color: #6abfc3;
+}
+
+header .btn:hover {
+  background-color: #8ecfd2;
+}
+
+header img {
+  width: 100%;
+}
+
+/* HOW */
+#how > * {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#how h2 {
+  margin-bottom: 50px;
+}
+
+#how > p {
+  margin-bottom: 50px;
+}
+
+#how li {
+  padding-right: 70px;
+  padding-left: 70px;
+}
+
+#how li img {
+  height: 120px;
+  margin-bottom: 40px;
+}
+
+#how li h3 {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+/* COURSES */
+#courses {
+  background-color: #f3f3F3;
+}
+
+#courses h2 {
+  margin-bottom: 40px;
+}
+
+#courses ul {
+  max-width: 950px;
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#courses li {
+  height: 150px;
+  width: 270px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 1em #ddd;
+}
+
+#courses img {
+  height: 80px;
+  margin-bottom: .5em;
+}
+
+#courses figcaption {
+  font-size: 1.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#courses .btn {
+  background-color: #ce973e;
+  border-color: #ce973e;
+}
+
+#courses .btn:hover {
+  background-color: #d8ad67;
+}
+
+/* SUCCESS STORIES */
+#success-stories {
+  background: linear-gradient(to bottom, #fff, #eee);
+}
+
+#success-stories > a {
+  display: inline-block;
+}
+
+#success-stories h2 {
+  margin-bottom: 80px;
+}
+
+#success-stories li {
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  text-align: left;
+}
+
+#success-stories li img {
+  height: 50px;
+  margin: 15px 25px;
+  border-radius: 50%;
+}
+
+#success-stories li div {
+  flex: 1;
+}
+
+#success-stories li h3 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #ce973e;
+}
+
+#success-stories li a:hover {
+  color: #000;
+}
+
+#success-stories #read-more {
+  margin-bottom: 60px;
+  font-size: 1.2em;
+  text-decoration: underline;
+  color: rgba(74,74,74,.7);
+}
+
+#success-stories #read-more:hover {
+  color: #000;
+}
+
+#success-stories > p {
+  margin-bottom: 35px;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+#success-stories .btn {
+  background-color: #6abfc3;
+}
+
+#success-stories .btn:hover {
+  background-color: #8ecfd2;
+}
+
+/* FOOTER */
+footer {
+  height: 140px;
+  align-items: center;
+}
+
+footer .logo {
+  display: none;
+  justify-content: center;
+  font-size: 20px;
+}
+
+footer .logo > a:last-child {
+  margin-left: .5em;
+}
+
+footer ul {
+  margin-bottom: 0;
+}
+
+footer .links {
+  justify-items: center;
+}
+
+footer .links a {
+  font-size: 1.2em;
+  font-weight: bold;
+  line-height: 2;
+  white-space: nowrap;
+  color: rgba(74,74,74,.7);
+}
+
+footer .links a:hover {
+  color: #000;
+}
+
+#social-media {
+  grid-gap: 5px;
+  text-align: center;
+}
+
+#social-media a {
+  font-size: 1.6em;
+  color: #ce973e;
+}
+
+#social-media a:hover {
+  color: #000;
+}
+
+/* COMMENTS */
+#comments a {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 .5em #aaa;
+  color: #fff;
+  background-color: #6abfc3;
+}
+
+#comments a:hover {
+  box-shadow: 0 0 .7em #888;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 560px) {
+  #courses li {
+    height: 256px;
+    width: 254px;
+    margin: 15px;
+  }
+  #courses img {
+    height: 160px;
+    margin-bottom: 1em;
+  }
+  #social-media a {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  nav {
+    position: static;
+    justify-content: flex-start;
+    padding: 0 168px;
+  }
+
+  #menu > a:first-child {
+    display: none;
+  }
+
+  #menu ul {
+    display: flex;
+  }
+
+  header {
+    margin-top: 50px;
+  }
+
+  #how > p {
+    width: 600px;
+  }
+
+  #how ul {
+    max-width: 1110px;
+  }
+
+  #how li {
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  #how li img {
+    height: 165px;
+  }
+
+  footer {
+    height: 250px;
+  }
+
+  footer .logo {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    justify-content: space-between;
+  }
+
+  nav .logo > a:last-child {
+    font-size: 35px;
+  }
+
+  .logo img {
+    height: 70px;
+  }
+
+  footer .logo > a:last-child {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1185px) {
+  #success-stories ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
